@@ -1,0 +1,68 @@
+[
+    {
+        "input_service_config": "juspay_billdesk_public_key_v2_merchant_cutover",
+        "lit_found_in_code": "juspay_billdesk_public_key_v2_merchant_cutover",
+        "dimensions_affected": {
+            "payment_instrument_group": [
+                "NET BANKING",
+                "UPI"
+            ],
+            "payment_gateway": [
+                "BILLDESK"
+            ]
+        }
+    }
+]
+
+Running with service_configuration : juspay_billdesk_public_key_v2_merchant_cutover
+Current function is $euler-x-1.0.0-inplace$Config.Constants$juspayBilldeskPublicKeyV2MerchantCutover
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Transforms$getCertificatesFromConfigs
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Transforms$getEncryptionRequiredDetails
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$extractWebhookResponse
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$createTxn
+Var found is UPI
+Var found is NB
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$createMandateTxn
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$initRefundBilldeskV2
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$initRefundSyncBilldeskV2
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$nonCardPreVerificationBillDeskV2Helper
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$verifyFlowAndGetTxnStatusFromPG
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$cardPreVerificationBillDeskV2
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$retrieveMandate
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$revokeMandateToken
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$callInitNotification
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$callNotificationStatus
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$initMandateMigrateRequest
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$initNotificationRequest
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$initNotificationSyncRequest
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$verifyVpa
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$updateTokenDetailsWithPG
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$processAutoRevoteMandate
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$initiateCardTxn
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$fetchRequiredDetailsAndSubmitPares
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$verifyFlowAndInitSIRequestWithPG
+Var found is BILLDESK
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$checkMandateStatus
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$initTxnBillDeskV2
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$sendCollectRequest
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$getSdkParams
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$initiateRefund
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$initRefundSync
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$initRefundArnSync
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$nonCardPreVerificationBillDeskV2
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$preVerification
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$verifyAndGetStatusFromPGForWebhook
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$verifyCardRegResponseAndSyncWithGw
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$verifyAndCheckTxnStatusWithPG
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$verifyMandateStatusWebhook
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$initiateAutoRevokeMandate
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$autoRevokeMandateToken
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$initiateTxn
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$executeMandate
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$initiateNonCardTxn
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$getStatusResponseForWebhook
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$syncWithGateway
+Current function is $euler-x-1.0.0-inplace$Gateway.Billdesk.Flow$billdeskTxnSync
+Adding related dimensions
+Removing key if exceeds threshold
+SC_Results have been saved to results_directory/problem_output.json

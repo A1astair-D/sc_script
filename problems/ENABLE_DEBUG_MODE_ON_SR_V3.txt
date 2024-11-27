@@ -1,0 +1,23 @@
+[
+    {
+        "input_service_config": "ENABLE_DEBUG_MODE_ON_SR_V3",
+        "dimensions_affected": {
+            "payment_instrument_group": [
+                "CARD",
+                "REWARD",
+                "UPI"
+            ]
+        }
+    }
+]
+
+Running with service_configuration : ENABLE_DEBUG_MODE_ON_SR_V3
+Checking with temp_str : ENABLE_DEBUG_MODE_ON_SR_V3
+Current function is $euler-x-1.0.0-inplace$Config.Constants$enableDebugModeOnSrV3
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Services.GatewaySelectionScoringV3.Flow$updateScoreAndQueue
+Var found is REWARD
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Services.GatewaySelectionScoringV3.Flow$updateSrV3Score
+Var found is CARD
+Var found is UPI
+Current function is $euler-api-decider-1.0.0-inplace$GatewayDecider.Constants$enableDebugModeOnSrV3
+SC_Results have been saved to problems/ENABLE_DEBUG_MODE_ON_SR_V3.txt

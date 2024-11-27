@@ -1,0 +1,11 @@
+[
+    {
+        "input_service_config": "phone_number_validation",
+        "lit_found_in_code": "phone_number",
+        "dimensions_affected": {
+            "payment_gateway": [
+                "TPSL"
+            ]
+        }
+    }
+]

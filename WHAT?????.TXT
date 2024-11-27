@@ -1,0 +1,85 @@
+
+performTokenEmiCheck :: (Nau.HasCallStack) => T.TransactionCreateReq -> Maybe Text -> Text -> MerchantAccount -> Maybe MerchantAccount -> BackendFlow TransactionLocalState Configs Bool
+performTokenEmiCheck req (Just ordRefId) token mAcc maybeSubMerhantAccount
+  | isJust $ req .|. L._is_emi = case req .|. L._emi_bank of
+    Just emiBank -> do
+      arrEnabledGws <- (L.take 100) <$> (UDB.findAll Const.ecDB $ constructEnabledWhereClause req)
+      gbesV2Flag <-  Redis.isRedisFeatureEnabled Constants.gbesV2Enabled (mAcc .^. L._merchantId)
+      arrEmiGws <- 
+        if gbesV2Flag
+          then do 
+            let (emiBankCode, cardType) = trimSuffix $ T.unpack emiBank
+            mbEmiCode <- UDB.findOne Const.ecDB $ [(Se.Is (\x -> x.emiBank) (Se.Eq (T.pack emiBankCode))) :: Se.Clause Database.Beam.MySQL.MySQL EmiBankCode.EmiBankCodeT]
+            case mbEmiCode of 
+              Just emiCode -> do 
+                (L.take 100) <$> (UDB.findAll Const.ecDB $ constructEmiV2WhereClause $ emiCode.juspayBankCodeId) >>= 
+                  (\emiArr -> do 
+                    (when (null emiArr) $ L.logInfoT "GBESV2 Entry Not Found" ("GBESV2 Entry Not Fount For juspayBankCodeId - " <> (T.pack $ show emiCode.juspayBankCodeId) <> " scope - NETWORK_TOKEN")) 
+                    pure $ (view L._gateway) <$> emiArr)
+              Nothing -> do 
+                L.logInfoT "GBESV2 Flow" (emiBank <> " bank value missing in emi_bank_code")
+                (L.take 100) <$> (UDB.findAll Const.ecDB $ constructEmiWhereClause emiBank) >>= (\emiArr -> pure $ (view L._gateway) <$> emiArr)
+          else (L.take 100) <$> (UDB.findAll Const.ecDB $ constructEmiWhereClause emiBank) >>= (\emiArr -> pure $ (view L._gateway) <$> emiArr)
+      case ( arrEnabledGws,
+             arrEmiGws
+           ) of
+        ([], _) -> pure True
+        (_, []) -> pure True
+        ( enabledArr,
+          emiArr
+          ) -> do
+            mMetaV2 <-
+              MTA.fetchOrderMetaDataByOrdRefIdMaybe
+                ordRefId
+                ( OptionalParameters
+                    { merchantId = req ^. L._merchant_id,
+                      disableDecryption = Nothing
+                    }
+                )
+            cardBrandSupportedMgas <- filterGwsOnCardBrand enabledArr
+            let enabledGws = (view L._gateway) <$> DA.filter (\mga -> checkGwRefId gwRefIdMap (mga .|. L._referenceId) mga) cardBrandSupportedMgas
+                gwRefIdMap = maybe SMP.empty (\metaV2 -> getGwRefIdMap $ hushedDecodeJSON =<< (metaV2 .|. L._metadata)) mMetaV2
+            pure $ DA.null $ DA.intersect emiArr enabledGws
+    Nothing -> pure False
+  | otherwise = pure False
+  where
+    constructEmiWhereClause :: Text -> Se.Where Database.Beam.MySQL.MySQL GBES.GatewayBankEmiSupportT
+    constructEmiWhereClause emiBank =
+      let whereClause = [Se.Is (\x -> x.bank) (Se.Eq (emiBank))] <> [Se.Is (\x -> x.scope) (Se.Eq (Just GBES.NETWORK_TOKEN))]
+       in [(Se.And whereClause) :: Se.Clause Database.Beam.MySQL.MySQL GBES.GatewayBankEmiSupportT]
+    constructEmiV2WhereClause :: Int -> Se.Where Database.Beam.MySQL.MySQL GBESV2.GatewayBankEmiSupportV2T
+    constructEmiV2WhereClause juspayBankCodeId =
+      let whereClause = [Se.Is (\x -> x.juspayBankCodeId) (Se.Eq (juspayBankCodeId))] <> [Se.Is (\x -> x.scope) (Se.Eq GBESV2.NETWORK_TOKEN)]
+       in [(Se.And whereClause) :: Se.Clause Database.Beam.MySQL.MySQL GBESV2.GatewayBankEmiSupportV2T]
+    trimSuffix :: String -> (String, String)
+    trimSuffix str
+      | "_CLEMI" `isSuffixOf` (str) = (take (length str - length ("_CLEMI" :: String)) str, "CONSUMER_FINANCE")
+      | "_CC" `isSuffixOf` str = (take (length str - length ("_CC" :: String)) str, "CREDIT")
+      | "DC" `isSuffixOf` str = (take (length str - length ("_DC" :: String)) str,"DIBIT")
+      | otherwise = (str,"CREDIT")
+
+````````
+data TxnCardInfoT (f :: Type -> Type) = TxnCardInfo {_id :: B.C f (Maybe Text), txnId :: B.C f Text, cardIsin :: B.C f (Maybe Text), cardIssuerBankName :: B.C f (Maybe Text), cardExpYear :: B.C f (Maybe Text), cardExpMonth :: B.C f (Maybe Text), cardSwitchProvider :: B.C f (Maybe Text), cardType :: B.C f (Maybe Text), cardLastFourDigits :: B.C f (Maybe Text), nameOnCard :: B.C f (Maybe Text), cardFingerprint :: B.C f (Maybe Text), cardReferenceId :: B.C f (Maybe Text), txnDetailId :: B.C f (Maybe Text), dateCreated :: B.C f (Maybe Date), paymentMethodType :: B.C f (Maybe PaymentMethodType), paymentMethod :: B.C f (Maybe Text), cardGlobalFingerprint :: B.C f (Maybe Text), paymentSource :: B.C f (Maybe Text), authType :: B.C f (Maybe Text), partitionKey :: B.C f (Maybe LocalTime)}
+  deriving anyclass (Newtype (TxnCardInfoT f))
+
+data CardType
+  = CREDIT
+  | DEBIT
+  | PREPAID
+  | NB
+  | WALLET
+  | PAYLATER
+  | UPI
+  | ATM_CARD
+  | REWARD
+  | CONSUMER_FINANCE
+  | CASH
+  | AADHAAR
+  | PAPERNACH
+  | VIRTUAL_ACCOUNT
+  | OTC
+  | RTP
+  | CRYPTO
+  | BLANK
+  deriving stock (Show, Eq)
+  deriving anyclass (Newtype (CardType))

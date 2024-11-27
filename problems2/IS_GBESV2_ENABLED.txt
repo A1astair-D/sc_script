@@ -1,0 +1,28 @@
+[
+    {
+        "input_service_config": "IS_GBESV2_ENABLED",
+        "lit_found_in_code": "IS_GBESV2_ENABLED",
+        "dimensions_affected": {
+            "payment_instrument_group": [
+                "CARD",
+                "CONSUMER_FINANCE",
+                "CREDIT CARD",
+                "DEBIT CARD"
+            ]
+        }
+    }
+]
+
+Running with service_configuration : IS_GBESV2_ENABLED
+Current function is $main$Euler.API.PreTxn.EmiPlans.Flow$getEmiPlansV2
+Current function is $euler-x-1.0.0-inplace$Config.Constants$gbesV2Enabled
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Services.TokenEmiUtils.Shims$performTokenEmiCheck
+lit found is CONSUMER_FINANCE
+Current function is $euler-api-decider-1.0.0-inplace$GatewayDecider.Constants$gbesV2Enabled
+Current function is $euler-api-decider-1.0.0-inplace$GatewayDecider.GWFilter$filterGatewaysForEmi
+lit found is CARD
+Current function is $euler-api-decider-1.0.0-inplace$GatewayDecider.GWFilter$gwFiltersForEligibility
+Current function is $euler-api-decider-1.0.0-inplace$GatewayDecider.GWFilter$newGwFilters
+Adding related dimensions
+Removing key if exceeds threshold
+SC_Results have been saved to results_directory/problem_output.json

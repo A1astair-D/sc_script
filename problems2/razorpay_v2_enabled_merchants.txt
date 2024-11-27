@@ -1,0 +1,30 @@
+[
+    {
+        "input_service_config": "razorpay_v2_enabled_merchants",
+        "lit_found_in_code": "razorpay_v2_enabled_merchants",
+        "dimensions_affected": {
+            "payment_gateway": [
+                "RAZORPAY"
+            ],
+            "payment_instrument_group": [
+                "CONSUMER_FINANCE"
+            ]
+        }
+    }
+]
+
+Running with service_configuration : razorpay_v2_enabled_merchants
+Current function is $euler-x-1.0.0-inplace$Config.Constants$razorpayV2EnabledMerchants
+Current function is $euler-x-1.0.0-inplace$Gateway.Razorpay.Flow$getSdkParamsNormalFlow
+Current function is $euler-x-1.0.0-inplace$Gateway.Razorpay.Flow$initRazorpayWebCollect
+Current function is $euler-x-1.0.0-inplace$Gateway.Razorpay.Flow$initRecurringPayment
+Current function is $euler-x-1.0.0-inplace$Gateway.Razorpay.Flow$initiateTxnNormalFlow
+Current function is $euler-x-1.0.0-inplace$Gateway.Razorpay.Flow$getSdkParams
+lit found is RAZORPAY
+Current function is $euler-x-1.0.0-inplace$Gateway.Razorpay.Flow$sendCollectRequest
+Current function is $euler-x-1.0.0-inplace$Gateway.Razorpay.Flow$executeMandate
+Current function is $euler-x-1.0.0-inplace$Gateway.Razorpay.Flow$initiateTxn
+Var found is CONSUMER_FINANCE
+Adding related dimensions
+Removing key if exceeds threshold
+SC_Results have been saved to results_directory/problem_output.json

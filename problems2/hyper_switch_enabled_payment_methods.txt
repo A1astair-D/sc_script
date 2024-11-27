@@ -1,0 +1,39 @@
+[
+    {
+        "input_service_config": "hyper_switch_enabled_payment_methods",
+        "lit_found_in_code": "hyper_switch_enabled_payment_methods",
+        "dimensions_affected": {
+            "payment_gateway": [
+                "NOON",
+                "STRIPE"
+            ]
+        }
+    }
+]
+
+Global graph built with 221124 nodes and 220183 edges.
+Running with service_configuration : hyper_switch_enabled_payment_methods
+Current function is $euler-api-gateway-0.1.0.1-inplace$Euler.API.Gateway.Gateway.HyperSwitch.Decider$checkCutovers
+Current function is $euler-api-gateway-0.1.0.1-inplace$Euler.API.Gateway.Gateway.HyperSwitch.Decider$syncTransactionDecider
+Var found is NOON
+Var found is STRIPE
+Current function is $euler-api-gateway-0.1.0.1-inplace$Euler.API.Gateway.Gateway.HyperSwitch.Decider$syncRefundDecider
+Current function is $euler-api-gateway-0.1.0.1-inplace$Euler.API.Gateway.Gateway.HyperSwitch.Decider$syncRefundDeciderV2
+Current function is $euler-api-gateway-0.1.0.1-inplace$Euler.API.Gateway.Gateway.HyperSwitch.Decider$initiateRefundDeciderV2
+Current function is $euler-api-gateway-0.1.0.1-inplace$Euler.API.Gateway.Gateway.HyperSwitch.Decider$initiateRefundDecider
+Current function is $euler-api-gateway-0.1.0.1-inplace$Euler.API.Gateway.Gateway.HyperSwitch.Decider$captureResponseDeciderV2
+Current function is $euler-api-gateway-0.1.0.1-inplace$Euler.API.Gateway.Gateway.HyperSwitch.Decider$captureResponseDecider
+Current function is $euler-api-gateway-0.1.0.1-inplace$Euler.API.Gateway.Gateway.HyperSwitch.Decider$verifyTxnWebhookResponseDecider
+Current function is $euler-api-gateway-0.1.0.1-inplace$Euler.API.Gateway.Gateway.HyperSwitch.Decider$redirectTransactionDecider
+Current function is $euler-api-gateway-0.1.0.1-inplace$Euler.API.Gateway.Gateway.HyperSwitch.Decider$syncAndVerifyGatewayResponseDecider
+Current function is $euler-api-gateway-0.1.0.1-inplace$Euler.API.Gateway.Gateway.HyperSwitch.Decider$getStatusDecider
+Current function is $euler-api-gateway-0.1.0.1-inplace$Euler.API.Gateway.Gateway.HyperSwitch.Decider$updateMandateDecider
+Current function is $euler-api-gateway-0.1.0.1-inplace$Euler.API.Gateway.Gateway.HyperSwitch.Decider$executeMandateDecider
+Current function is $euler-api-gateway-0.1.0.1-inplace$Euler.API.Gateway.Gateway.HyperSwitch.Decider$getSetupMandateDetailsDecider
+Current function is $euler-api-gateway-0.1.0.1-inplace$Euler.API.Gateway.Gateway.HyperSwitch.Decider$setupMandateDecider
+Current function is $euler-api-gateway-0.1.0.1-inplace$Euler.API.Gateway.Gateway.HyperSwitch.Decider$getSdkParamsDecider
+Current function is $euler-api-gateway-0.1.0.1-inplace$Euler.API.Gateway.Gateway.HyperSwitch.Decider$cardDirectDebitDecider
+Current function is $euler-api-gateway-0.1.0.1-inplace$Euler.API.Gateway.Gateway.HyperSwitch.Decider$initiateTransactionDecider
+Adding related dimensions
+Removing key if exceeds threshold
+SC_Results have been saved to results_directory/problem_output.json

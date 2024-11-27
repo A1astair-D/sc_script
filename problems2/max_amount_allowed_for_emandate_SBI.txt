@@ -1,0 +1,31 @@
+[
+    {
+        "input_service_config": "max_amount_allowed_for_emandate_SBI",
+        "lit_found_in_code": "max_amount_allowed_for_emandate_",
+        "dimensions_affected": {
+            "payment_gateway": [
+                "SBI"
+            ],
+            "payment_instrument_group": [
+                "CASH",
+                "MERCHANT_CONTAINER",
+                "WALLET"
+            ]
+        }
+    }
+]
+
+Running with service_configuration : max_amount_allowed_for_emandate_SBI
+Current function is $euler-x-1.0.0-inplace$Config.Constants$maxAmountAllowedForEmandate
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Transaction$proxyToCall
+lit found is HDFC
+Var found is MERCHANT_CONTAINER
+Var found is PHONEPE
+Var found is AMAZONPAY
+Var found is PAYTM
+Var found is CASH
+Var found is MERCHANT_CONTAINER
+Var found is WALLET
+Adding related dimensions
+Removing key if exceeds threshold
+SC_Results have been saved to results_directory/problem_output.json

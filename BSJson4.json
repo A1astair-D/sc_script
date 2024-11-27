@@ -1,0 +1,16 @@
+{
+    "summary": {
+        "count": 1,
+        "totalCount": 1
+    },
+    "rows": [
+        {
+            "lastUpdated": "2024-09-19T11:19:49Z",
+            "releaseId": "57abe8cdaa1041c088903743437f3171",
+            "dateCreated": "2024-09-19T11:19:49Z",
+            "newValue": "{\n   \"defaultLatencyThreshold\": 90,\n   \"defaultBucketSize\": 200,\n   \"defaultHedgingPercent\": 0\n}",
+            "currentValue": "{\n   \"defaultLatencyThreshold\": 90,\n   \"defaultBucketSize\": 200,\n   \"defaultHedgingPercent\": 1\n}",
+            "configName": "SR_V3_INPUT_CONFIG_zupee"
+        }
+    ]
+}

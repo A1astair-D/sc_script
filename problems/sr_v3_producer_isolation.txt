@@ -1,0 +1,58 @@
+[
+    {
+        "input_service_config": "sr_v3_producer_isolation",
+        "lit_found_in_code": "sr_v3_producer_isolation",
+        "dimensions_affected": {
+            "payment_instrument_group": [
+                "REWARD"
+            ],
+            "payment_gateway": [
+                "BILLDESK",
+                "CRED",
+                "GOOGLEPAY",
+                "HDFC_UPI",
+                "LOTUSPAY",
+                "YES_BIZ"
+            ],
+            "txn_object_type": [
+                "ORDER_PAYMENT"
+            ]
+        }
+    }
+]
+
+Global graph built with 221124 nodes and 220183 edges.
+Running with service_configuration : sr_v3_producer_isolation
+Current function is $euler-x-1.0.0-inplace$Config.Constants$shouldIsolateProducerVolumesSRv3
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.GatewayScoringService$updateGatewayScore
+Var found is REWARD
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.GatewayScoringService$checkAndUpdateGatewayScore
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.GatewayScoringService$updateGatewayScoreForEC
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Services.PaymentService$processFinalResponse
+lit found is HDFC_UPI
+lit found is CRED
+lit found is GOOGLEPAY
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Services.ReconService$processStatusConflictWorker
+Var found is ORDER_PAYMENT
+lit found is LOTUSPAY
+lit found is YES_BIZ
+lit found is BILLDESK
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Services.ReconService$processGatewayStatus
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Services.ThreeDS2.DeviceInformation$getBrowserInformation
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Services.ReconService$callGatewaySyncAndProcessStatus
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Services.ReconService$validateAndGetAuthNParamsAndProceedToAuthzCall
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Services.ReconService$handleDecoupledTxnSync
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Services.ReconService$handleSync
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Services.ReconService$execTxnStatusCheck
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Services.ReconService$decideSystemAndProcessTxnSync
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Services.ReconService$initSyncGatewayStatus
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Services.ReconService$syncGatewayStatus
+Current function is $oltp-0.1.0.0-inplace$Engineering.WorkFlow.TxnSyncWorkFlow$executeTxnSyncWorkFlow
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Services.ReconService$getMandateStatus'
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Services.ReconService$syncGatewayStatusHard
+Current function is $oltp-0.1.0.0-inplace$Engineering.WorkFlow.MandateWorkFlow$initiateMandateSync
+Current function is $oltp-0.1.0.0-inplace$Engineering.WorkFlow.MandateWorkFlow$getActionSpecificHandlingFunction
+Current function is $oltp-0.1.0.0-inplace$Engineering.WorkFlow.MandateWorkFlow$executeMandateWorkflow
+Current function is $oltp-0.1.0.0-inplace$Engineering.WorkFlow.MandateWorkFlow$initiateMandateWorkFlow
+Replacing 'extra' with proper dimensions
+SC_Results have been saved to results_directory/problem_output.json

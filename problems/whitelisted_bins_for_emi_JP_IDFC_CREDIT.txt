@@ -1,0 +1,139 @@
+[
+    {
+        "input_service_config": "whitelisted_bins_for_emi_JP_IDFC_CREDIT",
+        "dimensions_affected": {
+            "txn_object_type": [
+                "EMANDATE_PAYMENT",
+                "EMANDATE_REGISTER",
+                "MANDATE_PAYMENT",
+                "MANDATE_REGISTER",
+                "ORDER_PAYMENT",
+                "TPV_EMANDATE_PAYMENT",
+                "TPV_EMANDATE_REGISTER",
+                "TPV_PAYMENT",
+                "VAN_PAYMENT"
+            ],
+            "source_object": [
+                "MANDATE",
+                "UPI_COLLECT",
+                "UPI_INAPP",
+                "VAN_NB"
+            ],
+            "payment_instrument_group": [
+                "AADHAAR",
+                "CARD",
+                "CASH",
+                "CONSUMER_FINANCE",
+                "MERCHANT_CONTAINER",
+                "UPI",
+                "VIRTUAL_ACCOUNT",
+                "WALLET"
+            ],
+            "auth_type": [
+                "FIDO",
+                "MOTO",
+                "OTP",
+                "THREE_DS"
+            ],
+            "txn_type": [
+                "AUTH_AND_SETTLE",
+                "AUTH_AND_SPLIT_SETTLE",
+                "PREAUTH_AND_SETTLE",
+                "ZERO_AUTH"
+            ],
+            "payment_gateway": [
+                "AMAZONPAY",
+                "CASH",
+                "HDFC",
+                "MERCHANT_CONTAINER",
+                "PAYTM",
+                "PAYU",
+                "PHONEPE",
+                "QWIKCILVER",
+                "SODEXO"
+            ]
+        }
+    }
+]
+
+Global graph built with 221124 nodes and 220183 edges.
+Running with service_configuration : whitelisted_bins_for_emi_JP_IDFC_CREDIT
+Checking with temp_str : whitelisted_bins_for_emi_JP_IDFC_CREDIT
+Checking with temp_str : whitelisted_bins_for_emi_JP_IDFC_
+Checking with temp_str : whitelisted_bins_for_emi_JP_IDFC
+Checking with temp_str : whitelisted_bins_for_emi_JP_
+Checking with temp_str : whitelisted_bins_for_emi_JP
+Checking with temp_str : whitelisted_bins_for_emi_
+Current function is $euler-x-1.0.0-inplace$Config.Constants$whiteListedBinsForIssuerForEmi
+Current function is $oltp-0.1.0.0-inplace$TransactionTransforms$mkTxnDetail
+Var found is MANDATE_PAYMENT
+Var found is TPV_EMANDATE_REGISTER
+Var found is EMANDATE_REGISTER
+Var found is MANDATE_REGISTER
+Var found is ORDER_PAYMENT
+Var found is VAN_PAYMENT
+Var found is TPV_PAYMENT
+Var found is EMANDATE_PAYMENT
+Var found is TPV_EMANDATE_PAYMENT
+lit found is MANDATE
+lit found is CONSUMER_FINANCE
+Var found is CARD
+lit found is MOTO
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Transaction$createTxnFlow
+lit found is AUTH_AND_SETTLE
+lit found is AUTH_AND_SPLIT_SETTLE
+lit found is PREAUTH_AND_SETTLE
+lit found is ZERO_AUTH
+Var found is WALLET
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.TransactionEligibility$transactionEligibility
+Var found is SODEXO
+Var found is PAYU
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Transaction$initialiseTransactionWorkflow
+lit found is QWIKCILVER
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Mandate$internalDifferentMerchantMandateMigration
+Var found is UPI
+Var found is AADHAAR
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Mandate$migrateMandateFromMerchantSystemToJuspayForSameGateway
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.TransactionEligibility$transactionEligibilityV4
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Transaction$handleCardDirectDebitResp
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Transaction$authorizeSplitTransaction
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Transaction$viesStartPaymentFlow
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Transaction$initialiseSplitPaymentTxnFlow
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Transaction$decider
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.HandlePay$handlePay
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Mandate$mandateRetry
+Current function is $oltp-0.1.0.0-inplace$Engineering.WorkFlow.MandateWorkFlow$mandateRetry
+Current function is $oltp-0.1.0.0-inplace$Gateway.Morpheus.VirtualAccount$validateVanOrderAndCreateTxnHelper
+lit found is VAN_NB
+Var found is VIRTUAL_ACCOUNT
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Mandate$processMandateMigration
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Transaction$cardDirectDebitProcess
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Transaction$processRedirectTxn
+lit found is FIDO
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Transaction$deciderV4
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.HandlePay$handlePayDecider
+Current function is $oltp-0.1.0.0-inplace$Engineering.WorkFlow.MandateWorkFlow$verifyResponseAndProcess
+Current function is $oltp-0.1.0.0-inplace$Gateway.Morpheus.VirtualAccount$validateVanOrderAndCreateTxn
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Transaction$proxyToCall
+Var found is UPI_COLLECT
+Var found is UPI_INAPP
+lit found is HDFC
+Var found is CASH
+Var found is MERCHANT_CONTAINER
+Var found is PHONEPE
+Var found is AMAZONPAY
+Var found is PAYTM
+Var found is CASH
+Var found is MERCHANT_CONTAINER
+lit found is THREE_DS
+Var found is OTP
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Transaction$processTopUpResponse
+Current function is $oltp-0.1.0.0-inplace$Engineering.WorkFlow.MandateWorkFlow$handleMandateFlowResponse
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Transaction$handleResponseTopUp
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Transaction$handleRedirectRespTopUp
+Current function is $oltp-0.1.0.0-inplace$Engineering.WorkFlow.MandateWorkFlow$initiateMandateSync
+Current function is $oltp-0.1.0.0-inplace$Engineering.WorkFlow.MandateWorkFlow$initiateExecuteMandate
+Current function is $oltp-0.1.0.0-inplace$Engineering.WorkFlow.MandateWorkFlow$getActionSpecificHandlingFunction
+Current function is $oltp-0.1.0.0-inplace$Engineering.WorkFlow.MandateWorkFlow$executeMandateWorkflow
+Current function is $oltp-0.1.0.0-inplace$Engineering.WorkFlow.MandateWorkFlow$initiateMandateWorkFlow
+SC_Results have been saved to results_directory/problem_output.json

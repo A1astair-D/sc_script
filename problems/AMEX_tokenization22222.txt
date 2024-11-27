@@ -1,0 +1,11 @@
+[
+    {
+        "input_service_config": "AMEX_tokenization",
+        "lit_found_in_code": "",
+        "dimensions_affected": {
+            "payment_gateway": [
+                "AMEX"
+            ]
+        }
+    }
+]

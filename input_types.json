@@ -1,0 +1,579 @@
+{
+    "AIRPAY": {
+        "dataConstructors": [
+            {
+                "dataConNames": "AIRPAY",
+                "fields": {},
+                "sumTypes": []
+            }
+        ],
+        "name": "AIRPAY",
+        "typeKind": "data"
+    },
+    "AirpayAccountDetail": {
+        "dataConstructors": [
+            {
+                "dataConNames": "AirpayAccountDetail",
+                "fields": {
+                    "airpayClientId": "Text",
+                    "airpayClientSecret": "Text",
+                    "airpayMerchantId": "Text",
+                    "airpayPassword": "Text",
+                    "airpaySecret": "Text",
+                    "airpaySecretKey": "Text",
+                    "airpayUsername": "Text",
+                    "s2sEnabled": "Maybe Text"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "AirpayAccountDetail",
+        "typeKind": "data"
+    },
+    "AirpayRequest": {
+        "dataConstructors": [
+            {
+                "dataConNames": "AirpayRequest",
+                "fields": {
+                    "checksum": "Text",
+                    "encdata": "Text",
+                    "merchant_id": "Text",
+                    "privatekey": "Maybe Text"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "AirpayRequest",
+        "typeKind": "data"
+    },
+    "AirpayResponse": {
+        "dataConstructors": [
+            {
+                "dataConNames": "AirpayResponse",
+                "fields": {
+                    "merchantId": "Text",
+                    "response": "Text"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "AirpayResponse",
+        "typeKind": "data"
+    },
+    "DecryptedAirpayResponse": {
+        "dataConstructors": [
+            {
+                "dataConNames": "ValidDecryptedResponse",
+                "fields": {
+                    "0": "DecryptedResponse"
+                },
+                "sumTypes": []
+            },
+            {
+                "dataConNames": "PgErrorDecryptedResponse",
+                "fields": {
+                    "0": "ErrrorDecryptedResponse"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "DecryptedAirpayResponse",
+        "typeKind": "data"
+    },
+    "DecryptedResponse": {
+        "dataConstructors": [
+            {
+                "dataConNames": "DecryptedResponse",
+                "fields": {
+                    "message": "Text",
+                    "respData": "Value",
+                    "responseCode": "Text",
+                    "status": "Text",
+                    "statusCode": "Text"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "DecryptedResponse",
+        "typeKind": "data"
+    },
+    "EmbededTxnData": {
+        "dataConstructors": [
+            {
+                "dataConNames": "EmbededTxnData",
+                "fields": {
+                    "amount": "Text",
+                    "apSecureHash": "Maybe Text",
+                    "apTransactionid": "Text",
+                    "bankName": "Maybe Text",
+                    "bankResponseMsg": "Maybe Text",
+                    "billedAmount": "Maybe Text",
+                    "cardCountry": "Maybe Text",
+                    "cardScheme": "Maybe Text",
+                    "cardType": "Maybe Text",
+                    "cardUniqueCode": "Maybe Text",
+                    "chmod": "Text",
+                    "currencyCode": "Text",
+                    "customerEmail": "Text",
+                    "customerName": "Maybe Text",
+                    "customerPhone": "Maybe Text",
+                    "customerVpa": "Maybe Text",
+                    "customvar": "Maybe Text",
+                    "merchantId": "Text",
+                    "message": "Text",
+                    "orderid": "Text",
+                    "reason": "Maybe Text",
+                    "risk": "Text",
+                    "transactionPaymentStatus": "Text",
+                    "transactionStatus": "Int",
+                    "transactionTime": "Text",
+                    "transactionType": "Int",
+                    "txnMode": "Maybe Text"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "EmbededTxnData",
+        "typeKind": "data"
+    },
+    "EmbededTxnEncDataPayload": {
+        "dataConstructors": [
+            {
+                "dataConNames": "EmbededTxnEncDataPayload",
+                "fields": {
+                    "amount": "Text",
+                    "bankCode": "Maybe Text",
+                    "buyerAddress": "Maybe Text",
+                    "buyerCity": "Maybe Text",
+                    "buyerCountry": "Maybe Text",
+                    "buyerEmail": "Text",
+                    "buyerFirstname": "Text",
+                    "buyerLastname": "Text",
+                    "buyerPhone": "Text",
+                    "buyerPincode": "Maybe Text",
+                    "buyerState": "Maybe Text",
+                    "cardCvv": "Maybe Text",
+                    "cardNumber": "Maybe Text",
+                    "channel": "Text",
+                    "chmod": "Text",
+                    "currencyCode": "Text",
+                    "customerVpa": "Maybe Text",
+                    "customvar": "Maybe Text",
+                    "expiryMm": "Maybe Text",
+                    "expiryYy": "Maybe Text",
+                    "isoCurrency": "Text",
+                    "merDom": "Maybe Text",
+                    "orderid": "Text",
+                    "token": "Maybe Text",
+                    "tokenCryptogram": "Maybe Text",
+                    "tokenExpiry": "Maybe Text",
+                    "txnsubtype": "Maybe Text"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "EmbededTxnEncDataPayload",
+        "typeKind": "data"
+    },
+    "ErrrorDecryptedResponse": {
+        "dataConstructors": [
+            {
+                "dataConNames": "ErrrorDecryptedResponse",
+                "fields": {
+                    "errorData": "[Value]",
+                    "message": "Text",
+                    "responseCode": "Text",
+                    "status": "Text",
+                    "statusCode": "Text"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "ErrrorDecryptedResponse",
+        "typeKind": "data"
+    },
+    "GenericErrorResponseParam": {
+        "dataConstructors": [
+            {
+                "dataConNames": "GenericErrorResponseParam",
+                "fields": {
+                    "0": "Types.ErrorResponse",
+                    "1": "TxnStatus"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "GenericErrorResponseParam",
+        "typeKind": "data"
+    },
+    "GenericOauthError": {
+        "dataConstructors": [
+            {
+                "dataConNames": "GenericOauthError",
+                "fields": {
+                    "0": "Types.ErrorResponse"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "GenericOauthError",
+        "typeKind": "data"
+    },
+    "GenericRefundError": {
+        "dataConstructors": [
+            {
+                "dataConNames": "GenericRefundError",
+                "fields": {
+                    "0": "Types.ErrorResponse",
+                    "1": "RefundStatus"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "GenericRefundError",
+        "typeKind": "data"
+    },
+    "GenericTxnSyncError": {
+        "dataConstructors": [
+            {
+                "dataConNames": "GenericTxnSyncError",
+                "fields": {
+                    "0": "Types.ErrorResponse"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "GenericTxnSyncError",
+        "typeKind": "data"
+    },
+    "JsonResponse": {
+        "dataConstructors": [
+            {
+                "dataConNames": "JsonResponse",
+                "fields": {
+                    "synonym": "(Map Text (Map Text AirpayResponse))"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "JsonResponse",
+        "typeKind": "type"
+    },
+    "Oauth2Data": {
+        "dataConstructors": [
+            {
+                "dataConNames": "Oauth2Data",
+                "fields": {
+                    "accessToken": "Text",
+                    "expiresIn": "Int",
+                    "tokenType": "Text"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "Oauth2Data",
+        "typeKind": "data"
+    },
+    "Oauth2EncDataPayload": {
+        "dataConstructors": [
+            {
+                "dataConNames": "Oauth2EncDataPayload",
+                "fields": {
+                    "clientId": "Text",
+                    "clientSecret": "Text",
+                    "grantType": "Text",
+                    "merchantId": "Text"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "Oauth2EncDataPayload",
+        "typeKind": "data"
+    },
+    "OrderConfirmationData": {
+        "dataConstructors": [
+            {
+                "dataConNames": "OrderConfirmationData",
+                "fields": {
+                    "amount": "Text",
+                    "apSecureHash": "Text",
+                    "apTransactionid": "Text",
+                    "bankName": "Maybe Text",
+                    "cardNumber": "Maybe Text",
+                    "cardScheme": "Maybe Text",
+                    "cardType": "Maybe Text",
+                    "chmod": "Text",
+                    "currencyCode": "Maybe Text",
+                    "customerEmail": "Maybe Text",
+                    "customerName": "Maybe Text",
+                    "customerPhone": "Maybe Text",
+                    "customerVpa": "Maybe Text",
+                    "customvar": "Maybe Text",
+                    "merchantId": "Text",
+                    "merchantName": "Maybe Text",
+                    "message": "Text",
+                    "orderid": "Text",
+                    "reason": "Maybe Text",
+                    "risk": "Maybe Text",
+                    "rrn": "Maybe Text",
+                    "transactionPaymentStatus": "Text",
+                    "transactionReason": "Maybe Text",
+                    "transactionStatus": "Int",
+                    "transactionTime": "Maybe Text",
+                    "transactionType": "Maybe Int"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "OrderConfirmationData",
+        "typeKind": "data"
+    },
+    "OrderConfirmationEncDataPayload": {
+        "dataConstructors": [
+            {
+                "dataConNames": "OrderConfirmationEncDataPayload",
+                "fields": {
+                    "apTransactionid": "Maybe Text",
+                    "orderid": "Text"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "OrderConfirmationEncDataPayload",
+        "typeKind": "data"
+    },
+    "QrEncData": {
+        "dataConstructors": [
+            {
+                "dataConNames": "QrEncData",
+                "fields": {
+                    "amount": "Text",
+                    "buyerEmail": "Text",
+                    "buyerPhone": "Text",
+                    "callType": "Text",
+                    "customvar": "Maybe Text",
+                    "merDom": "Maybe Text",
+                    "orderid": "Text",
+                    "tid": "Maybe Text"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "QrEncData",
+        "typeKind": "data"
+    },
+    "RedirectionResp": {
+        "dataConstructors": [
+            {
+                "dataConNames": "RedirectionResp",
+                "fields": {
+                    "amount": "Text",
+                    "apSecureHash": "Text",
+                    "apTransactionid": "Text",
+                    "authId": "Maybe Text",
+                    "bankName": "Maybe Text",
+                    "bankResponseMsg": "Maybe Text",
+                    "billedAmount": "Maybe Text",
+                    "campaignDiscount": "Maybe Text",
+                    "campaignId": "Maybe Text",
+                    "campaignTitle": "Maybe Text",
+                    "cardCountry": "Maybe Text",
+                    "cardNumber": "Maybe Text",
+                    "cardScheme": "Maybe Text",
+                    "cardType": "Maybe Text",
+                    "cardUniqueCode": "Maybe Text",
+                    "ccExpiry": "Maybe Text",
+                    "chargedAmount": "Maybe Text",
+                    "chmod": "Text",
+                    "conversionRate": "Maybe Text",
+                    "currencyCode": "Maybe Text",
+                    "customerBankBalance": "Maybe Text",
+                    "customerEmail": "Maybe Text",
+                    "customerName": "Maybe Text",
+                    "customerPhone": "Maybe Text",
+                    "customerVpa": "Maybe Text",
+                    "customvar": "Maybe Text",
+                    "emiTenure": "Maybe Text",
+                    "ipnId": "Maybe Text",
+                    "merchantId": "Text",
+                    "merchantName": "Maybe Text",
+                    "message": "Text",
+                    "orderid": "Text",
+                    "originalCurrency": "Maybe Text",
+                    "originalFxrate": "Maybe Text",
+                    "posEntryMode": "Maybe Text",
+                    "reason": "Maybe Text",
+                    "risk": "Maybe Text",
+                    "rrn": "Maybe Text",
+                    "settlementDate": "Maybe Text",
+                    "subscriptionId": "Maybe Text",
+                    "subscriptionNextRundate": "Maybe Text",
+                    "surchargeAmount": "Maybe Text",
+                    "terminalId": "Maybe Text",
+                    "token": "Maybe Text",
+                    "transactionPaymentStatus": "Text",
+                    "transactionReason": "Maybe Text",
+                    "transactionStatus": "Int",
+                    "transactionTime": "Maybe Text",
+                    "transactionType": "Maybe Int",
+                    "utrNo": "Maybe Text",
+                    "walletBalance": "Maybe Text"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "RedirectionResp",
+        "typeKind": "data"
+    },
+    "RefundData": {
+        "dataConstructors": [
+            {
+                "dataConNames": "RefundData",
+                "fields": {
+                    "transactions": "[RefundExecuteData]"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "RefundData",
+        "typeKind": "data"
+    },
+    "RefundEncdataPayload": {
+        "dataConstructors": [
+            {
+                "dataConNames": "RefundEncdataPayload",
+                "fields": {
+                    "transactions": "Text"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "RefundEncdataPayload",
+        "typeKind": "data"
+    },
+    "RefundExecuteData": {
+        "dataConstructors": [
+            {
+                "dataConNames": "RefundExecuteData",
+                "fields": {
+                    "amount": "Text",
+                    "apTransactionid": "Text",
+                    "message": "Text",
+                    "mode": "Maybe Text",
+                    "refundId": "Text",
+                    "success": "Text"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "RefundExecuteData",
+        "typeKind": "data"
+    },
+    "RefundTransaction": {
+        "dataConstructors": [
+            {
+                "dataConNames": "RefundTransaction",
+                "fields": {
+                    "amount": "Text",
+                    "apTransactionid": "Text"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "RefundTransaction",
+        "typeKind": "data"
+    },
+    "RefundVerificationPayload": {
+        "dataConstructors": [
+            {
+                "dataConNames": "RefundVerificationPayload",
+                "fields": {
+                    "epgTxnId": "Text"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "RefundVerificationPayload",
+        "typeKind": "data"
+    },
+    "SyncErrorResponse": {
+        "dataConstructors": [
+            {
+                "dataConNames": "SyncErrorResponse",
+                "fields": {
+                    "errorCode": "Text",
+                    "errorMessage": "Text",
+                    "errorType": "Maybe Text",
+                    "gwResponse": "Maybe Value"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "SyncErrorResponse",
+        "typeKind": "data"
+    },
+    "SyncIntegrityError": {
+        "dataConstructors": [
+            {
+                "dataConNames": "ApiCallError",
+                "fields": {
+                    "0": "Servant.ClientError"
+                },
+                "sumTypes": []
+            },
+            {
+                "dataConNames": "SyncError",
+                "fields": {
+                    "0": "Value"
+                },
+                "sumTypes": []
+            },
+            {
+                "dataConNames": "GenericError",
+                "fields": {
+                    "0": "Types.ErrorResponse"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "SyncIntegrityError",
+        "typeKind": "data"
+    },
+    "UpiQrData": {
+        "dataConstructors": [
+            {
+                "dataConNames": "UpiQrData",
+                "fields": {
+                    "apTransactionid": "Text",
+                    "qrcodeString": "Text",
+                    "status": "Int"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "UpiQrData",
+        "typeKind": "data"
+    },
+    "VerifiedPayload": {
+        "dataConstructors": [
+            {
+                "dataConNames": "VerifiedPayload",
+                "fields": {
+                    "cardCvv": "Maybe Text",
+                    "cardExpiryMonth": "Maybe Text",
+                    "cardExpiryYear": "Maybe Text",
+                    "cardNum": "Maybe Text",
+                    "isTokenTxn": "Bool",
+                    "pmCode": "Maybe Text",
+                    "tavv": "Maybe Text",
+                    "token": "Maybe Text",
+                    "tokenExpiry": "Maybe Text",
+                    "vpa": "Maybe Text"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "VerifiedPayload",
+        "typeKind": "data"
+    }
+}

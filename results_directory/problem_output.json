@@ -1,0 +1,16 @@
+[
+    {
+        "input_service_config": "payu_order_amount_as_subvention_amount_cutover",
+        "lit_found_in_code": "payu_order_amount_as_subvention_amount_cutover",
+        "dimensions_affected": {
+            "payment_gateway": [
+                "BAJAJFINSERV",
+                "PAYU",
+                "TWID"
+            ],
+            "payment_instrument_group": [
+                "UPI"
+            ]
+        }
+    }
+]

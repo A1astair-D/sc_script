@@ -1,0 +1,32 @@
+[
+    {
+        "input_service_config": "schedule_level_mandate_execution_enabled_merchants",
+        "lit_found_in_code": "schedule_level_mandate_execution_enabled_merchants",
+        "dimensions_affected": {
+            "payment_instrument_group": [
+                "CASH",
+                "MERCHANT_CONTAINER",
+                "WALLET"
+            ]
+        }
+    }
+]
+
+❯ /usr/bin/python3 /Users/alastair.dsouza/Documents/euler3/SC_script/DimensionGraph.py
+Global graph built with 221124 nodes and 220183 edges.
+Running with service_configuration : schedule_level_mandate_execution_enabled_merchants
+Current function is $euler-x-1.0.0-inplace$Engineering.WorkFlow.Mandate.Constants$scheduleLevelMandateExecutionEnabledMerchants
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Transaction$decideMandateExecutionFlowAndProcessTxn
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Transaction$mandateTxnProcess
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Transaction$proxyToCall
+lit found is HDFC
+Var found is MERCHANT_CONTAINER
+Var found is PHONEPE
+Var found is AMAZONPAY
+Var found is PAYTM
+Var found is CASH
+Var found is MERCHANT_CONTAINER
+Var found is WALLET
+Adding related dimensions
+Removing key if exceeds threshold
+SC_Results have been saved to results_directory/problem_output.json

@@ -1,0 +1,29 @@
+[
+    {
+        "input_service_config": "GOCASHFREE_EMI_CODES",
+        "lit_found_in_code": "GOCASHFREE_EMI_CODES",
+        "dimensions_affected": {
+            "payment_gateway": [
+                "GOCASHFREE",
+                "PAYPAL"
+            ],
+            "payment_instrument_group": [
+                "WALLET"
+            ]
+        }
+    }
+]
+
+Running with service_configuration : GOCASHFREE_EMI_CODES
+Current function is $euler-x-1.0.0-inplace$Gateway.Cashfree.Transforms$getBankCodeForEMI
+Current function is $euler-x-1.0.0-inplace$Gateway.Cashfree.Flow$getEmiCode
+Current function is $euler-x-1.0.0-inplace$Gateway.Cashfree.Flow$cashfreeTxnV1
+lit found is PAYPAL
+lit found is GOCASHFREE
+Current function is $euler-x-1.0.0-inplace$Gateway.Cashfree.Flow$cashfreeTxnV3
+Var found is WALLET
+Current function is $euler-x-1.0.0-inplace$Gateway.Cashfree.Flow$cashFreeNewTxn
+Current function is $euler-x-1.0.0-inplace$Gateway.Cashfree.Flow$initiateTxn
+Adding related dimensions
+Removing key if exceeds threshold
+SC_Results have been saved to results_directory/problem_output.json

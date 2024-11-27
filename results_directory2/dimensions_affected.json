@@ -1,0 +1,42 @@
+[
+    {
+        "configName": "enable_razorpay_v2_order_create",
+        "dimensions_affected": {
+            "merchant_id": [
+                "jiosaavn",
+                "com_shaadi",
+                "slice",
+                "smallcase",
+                "insurancedekho",
+                "naviloans",
+                "navidigigold",
+                "ausfinsurance",
+                "tfpl",
+                "biryanibykilo",
+                "moneyview",
+                "ring",
+                "tatagcstore"
+            ]
+        }
+    },
+    {
+        "configName": "Comined_Dimensions_Affected",
+        "dimensions_affected": {
+            "merchant_id": [
+                "jiosaavn",
+                "com_shaadi",
+                "slice",
+                "smallcase",
+                "insurancedekho",
+                "naviloans",
+                "navidigigold",
+                "ausfinsurance",
+                "tfpl",
+                "biryanibykilo",
+                "moneyview",
+                "ring",
+                "tatagcstore"
+            ]
+        }
+    }
+]

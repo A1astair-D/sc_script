@@ -1,0 +1,56 @@
+[
+    {
+        "input_service_config": "enable_gateway_headers",
+        "lit_found_in_code": "enable_gateway_headers",
+        "dimensions_affected": {
+            "payment_instrument_group": [
+                "CONSUMER_FINANCE"
+            ],
+            "payment_gateway": [
+                "EASEBUZZ"
+            ]
+        }
+    }
+]
+
+Global graph built with 221124 nodes and 220183 edges.
+Running with service_configuration : enable_gateway_headers
+Current function is $euler-x-1.0.0-inplace$Config.Constants$enableGwHeader
+Current function is $euler-x-1.0.0-inplace$Gateway.PhonePe.Transforms$make_PhonepeTransactionApiHeader
+Current function is $euler-x-1.0.0-inplace$Gateway.PhonePe.Transforms$makePhonepeUpiCollectHeader
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Transforms$makeEaseBuzzRequestHeaders'
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Transforms$makeEaseBuzzRequestHeaders
+Current function is $euler-x-1.0.0-inplace$Gateway.PhonePe.Flow$initPhonePeTransactionRequest
+Current function is $euler-x-1.0.0-inplace$Gateway.PhonePe.Flow$sendCollectRequest
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Flow$initDelayedSettelemt
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Flow$initDelayedSettelemtStatusCheck
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Flow$initEaseBuzzInitiatePayment
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Flow$initEaseBuzzGetEMIOptions
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Flow$initEaseBuzzGetEMIPlans
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Flow$initEaseBuzztxnSyncRequest
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Flow$initEaseBuzzRefundRequest
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Flow$initEaseBuzzRefundSyncRequest
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Flow$initUpiIntentRequest
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Flow$initEasebuzzSdkOnlyAuthZRequest
+Current function is $euler-x-1.0.0-inplace$Gateway.PhonePe.Flow$initiateTxn
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Flow$initateSplitSettelemt
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Flow$syncTrasnfer
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Flow$initiateNormalTxn
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Flow$sendCollectRequest
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Flow$getSdkParams
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Flow$preTxnValidator
+Var found is CONSUMER_FINANCE
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Flow$callTxnSync
+Var found is EASEBUZZ
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Flow$easeBuzzRefundRequest
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Flow$easeBuzzRefundSyncRequest
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Flow$authorizeThreeDSTransaction
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Flow$initiateTxn
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Flow$callGetStatusResponseForWebhook
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Flow$callSyncWithGateway
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Flow$easeBuzzTxnSync
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Flow$getStatusResponseForWebhook
+Current function is $euler-x-1.0.0-inplace$Gateway.EaseBuzz.Flow$syncWithGateway
+Adding related dimensions
+Removing key if exceeds threshold
+SC_Results have been saved to results_directory/problem_output.json

@@ -1,0 +1,16 @@
+{
+    "summary": {
+        "count": 1,
+        "totalCount": 1
+    },
+    "rows": [
+        {
+            "lastUpdated": "2024-09-18T05:05:46Z",
+            "releaseId": "e62320a49adf4f13a636b3c5079f9fc5",
+            "dateCreated": "2024-09-18T05:05:46Z",
+            "newValue": "[\n   \"PAYU\",\n   \"PAYTM_V2\",\n   \"RAZORPAY\",\n   \"AMEX\",\n   \"JIOPAY\",\n   \"GOCASHFREE\"\n]",
+            "currentValue": "[\n   \"PAYU\",\n   \"PAYTM_V2\",\n   \"RAZORPAY\",\n   \"AMEX\",\n   \"JIOPAY\"\n]",
+            "configName": "AMEX_TOKEN_REPEAT_SUPPORTED_GATEWAYS"
+        }
+    ]
+}

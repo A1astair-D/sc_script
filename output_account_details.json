@@ -1,0 +1,1315 @@
+[
+    [
+        "CardinalAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "CardinalAccountDetails",
+                    "fields": {
+                        "apiIdentifier": "Text",
+                        "apiKey": "Text",
+                        "orgUnitId": "Text",
+                        "publicKey": "Text",
+                        "publicKeyVersion": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "CardinalAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "TpvAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "TpvAccountDetails",
+                    "fields": {
+                        "bankAccountHash": "Maybe Text",
+                        "bankAccountId": "Maybe Text",
+                        "bankAccountNumber": "Text",
+                        "bankAccountType": "Maybe BankAccountType",
+                        "bankBeneficiaryName": "Maybe Text",
+                        "bankIfsc": "Maybe Text",
+                        "juspayBankCode": "Maybe Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "TpvAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "EulerAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "EulerAccountDetails",
+                    "fields": {
+                        "checksumKey": "Text",
+                        "merchantId": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "EulerAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "MADYPPAccountDetail",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "MADYPPAccountDetail",
+                    "fields": {
+                        "eulerPrivateKey": "Text",
+                        "eulerPublicKey": "Text",
+                        "partnerKey": "Text",
+                        "yppPublicKey": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "MADYPPAccountDetail",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "MGAYPPAccountDetail",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "MGAYPPAccountDetail",
+                    "fields": {
+                        "intentExpiryInMinutes": "Maybe Int",
+                        "mcc": "Text",
+                        "payeeVpa": "Text",
+                        "sellerIdentifier": "Text",
+                        "waitingPageExpiryInSeconds": "Maybe Int"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "MGAYPPAccountDetail",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "YPPAccountDetail",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "YPPAccountDetail",
+                    "fields": {
+                        "masterAccDetails": "MADYPPAccountDetail",
+                        "mgaAccDetails": "MGAYPPAccountDetail"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "YPPAccountDetail",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "PostpayAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "PostpayAccountDetails",
+                    "fields": {
+                        "merchantId": "Text",
+                        "numInstalments": "Maybe Text",
+                        "skLive": "Text",
+                        "webhookSecret": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "PostpayAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "PayZappAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "PayZappAccountDetails",
+                    "fields": {
+                        "payZappAPIKey": "Text",
+                        "payZappAcquirerId": "Text",
+                        "payZappMerchantId": "Text",
+                        "payZappTerminalId": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "PayZappAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "TataUPIAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "TataUPIAccountDetails",
+                    "fields": {
+                        "channelId": "Text",
+                        "privateKey": "Text",
+                        "publicKey": "Text",
+                        "storeId": "Text",
+                        "submerchantId": "Text",
+                        "terminalId": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "TataUPIAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "AirwallexAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "AirwallexAccountDetails",
+                    "fields": {
+                        "airwallexAccessToken": "Maybe Text",
+                        "airwallexAccountId": "Text",
+                        "airwallexApiKey": "Text",
+                        "airwallexApplePayCertificate": "Maybe Text",
+                        "airwallexApplePayDisplayName": "Maybe Text",
+                        "airwallexApplePayInitiative": "Maybe Text",
+                        "airwallexApplePayMerchantIdentifier": "Maybe Text",
+                        "airwallexApplePayPrivateKey": "Maybe Text",
+                        "airwallexClientId": "Text",
+                        "airwallexGooglePayMerchantId": "Maybe Text",
+                        "airwallexGooglePayMerchantName": "Maybe Text",
+                        "airwallexTokenExpiry": "Maybe Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "AirwallexAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "BraintreeAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "BraintreeAccountDetails",
+                    "fields": {
+                        "braintreeVersion": "Text",
+                        "privateKey": "Text",
+                        "publicKey": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "BraintreeAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "OnePayAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "OnePayAccountDetails",
+                    "fields": {
+                        "onepayApiKey": "Text",
+                        "onepayMerchantId": "Text",
+                        "onepayMerchantName": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "OnePayAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "WorldPayAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "WorldPayAccountDetails",
+                    "fields": {
+                        "challengeMandated": "Bool",
+                        "issuer": "Text",
+                        "jwtLifeSpan": "Int",
+                        "macKey": "Text",
+                        "merchantId": "Text",
+                        "orgUnitId": "Text",
+                        "password": "Text",
+                        "userName": "Text",
+                        "version": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "WorldPayAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "PayUAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "PayUAccountDetails",
+                    "fields": {
+                        "cardDirectOtpEnabled": "Maybe Text",
+                        "disableMandatePreDebitNotification": "Maybe Text",
+                        "googlePayCardPaymentsEnabled": "Maybe Text",
+                        "isPreAuthEnabled": "Maybe Text",
+                        "payuMerchantKey": "Text",
+                        "payuSalt": "Text",
+                        "s2sEnabled": "Maybe Text",
+                        "waitingPageExpiryInSeconds": "Maybe Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "PayUAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "CareempayAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "CareempayAccountDetails",
+                    "fields": {
+                        "accessToken": "Text",
+                        "clientId": "Text",
+                        "clientSecret": "Text",
+                        "recurringDetailsId": "Maybe Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "CareempayAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "HyperPayAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "HyperPayAccountDetails",
+                    "fields": {
+                        "hyperPayApplePayCertificate": "Maybe Text",
+                        "hyperPayApplePayDisplayName": "Maybe Text",
+                        "hyperPayApplePayEntityId": "Maybe Text",
+                        "hyperPayApplePayInitiative": "Maybe Text",
+                        "hyperPayApplePayMerchantIdentifier": "Maybe Text",
+                        "hyperPayApplePayPrivateKey": "Maybe Text",
+                        "hyperPayApplePayRecurringEntityId": "Maybe Text",
+                        "hyperPayAuthToken": "Text",
+                        "hyperPayCardsEntityId": "Maybe Text",
+                        "hyperPayCardsRecurringEntityId": "Maybe Text",
+                        "hyperPaySecret": "Maybe Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "HyperPayAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "HdfcAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "HdfcAccountDetails",
+                    "fields": {
+                        "authorization": "Maybe Text",
+                        "checksumKey": "Text",
+                        "merchantCode": "Text",
+                        "useTxnIdAsTr": "Maybe Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "HdfcAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "PaymobAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "PaymobAccountDetails",
+                    "fields": {
+                        "apiKey": "Text",
+                        "cardIntegrationNumber": "Maybe Text",
+                        "hmacKey": "Text",
+                        "secretKey": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "PaymobAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "TwoCTwoPAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "TwoCTwoPAccountDetails",
+                    "fields": {
+                        "gatewayPublicKey": "Text",
+                        "merchantId": "Text",
+                        "merchantPrivateKey": "Text",
+                        "merchantSecret": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "TwoCTwoPAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "PayglocalAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "PayglocalAccountDetails",
+                    "fields": {
+                        "payGlocalMerchantId": "Text",
+                        "payGlocalPrivateKey": "Text",
+                        "payGlocalPrivateKeyKid": "Text",
+                        "payGlocalPublicKey": "Text",
+                        "payGlocalPublicKeyKid": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "PayglocalAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "AxisBizAuthAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "AxisBizAuthAccountDetails",
+                    "fields": {
+                        "axisBizChannelId": "Text",
+                        "axisBizMerchantId": "Text",
+                        "axisBizPrefix": "Text",
+                        "axisBizSignatureKey": "Maybe Text",
+                        "eulerPrivateKey": "Maybe Text",
+                        "mcc": "Text",
+                        "newtonGateway": "Maybe Gateway",
+                        "newtonPublicKey": "Maybe Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "AxisBizAuthAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "AxisBizMasterMerchantAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "AxisBizMasterMerchantAccountDetails",
+                    "fields": {
+                        "algorithm": "Maybe Text",
+                        "axisBizMasterMerchantChannelId": "Text",
+                        "axisBizMasterMerchantId": "Text",
+                        "axisBizSignatureKey": "Maybe Text",
+                        "eulerPrivateKey": "Maybe Text",
+                        "keyId": "Maybe Text",
+                        "mcc": "Maybe Text",
+                        "newtonPublicKey": "Maybe Text",
+                        "payeeVpa": "GT.MerchantVpa",
+                        "refundVpa": "Maybe GT.MerchantVpa"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "AxisBizMasterMerchantAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "AxisBizSubMerchantAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "AxisBizSubMerchantAccountDetails",
+                    "fields": {
+                        "axisBizSubMerchantChannelId": "Text",
+                        "axisBizSubMerchantId": "Text",
+                        "enableBankInstantRefund": "Maybe Bool",
+                        "intentExpiryInSeconds": "Maybe Int",
+                        "intentRegistrationEnabled": "GT.IsIntentEnabled",
+                        "mcc": "Maybe Text",
+                        "payeeVpa": "GT.MerchantVpa",
+                        "useTxnUuidAsTr": "Maybe Bool",
+                        "waitingPageExpiryInSeconds": "Maybe Int"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "AxisBizSubMerchantAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "YesBizAuthAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "YesBizAuthAccountDetails",
+                    "fields": {
+                        "mcc": "Text",
+                        "yesBizChannelId": "Text",
+                        "yesBizEulerPrivateKey": "Maybe Text",
+                        "yesBizMerchantId": "Text",
+                        "yesBizPrefix": "Text",
+                        "yesBizPublicKey": "Maybe Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "YesBizAuthAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "YesBizMasterMerchantAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "YesBizMasterMerchantAccountDetails",
+                    "fields": {
+                        "algorithm": "Maybe Text",
+                        "keyId": "Maybe Text",
+                        "mcc": "Maybe Text",
+                        "payeeVpa": "GT.MerchantVpa",
+                        "refundVpa": "Maybe GT.MerchantVpa",
+                        "yesBizEulerPrivateKey": "Maybe Text",
+                        "yesBizEulerPublicKey": "Maybe Text",
+                        "yesBizMasterMerchantChannelId": "Text",
+                        "yesBizMasterMerchantId": "Text",
+                        "yesBizPublicKey": "Maybe Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "YesBizMasterMerchantAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "YesBizSubMerchantAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "YesBizSubMerchantAccountDetails",
+                    "fields": {
+                        "enableBankInstantRefund": "Maybe Bool",
+                        "intentExpiryInSeconds": "Maybe Int",
+                        "intentRegistrationEnabled": "GT.IsIntentEnabled",
+                        "mcc": "Maybe Text",
+                        "payeeVpa": "GT.MerchantVpa",
+                        "useTxnUuidAsTr": "Maybe Bool",
+                        "waitingPageExpiryInSeconds": "Maybe Int",
+                        "yesBizSubMerchantChannelId": "Text",
+                        "yesBizSubMerchantId": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "YesBizSubMerchantAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "FawryPayAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "FawryPayAccountDetails",
+                    "fields": {
+                        "merchantCode": "Text",
+                        "merchantSecureKey": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "FawryPayAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "BokuAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "BokuAccountDetails",
+                    "fields": {
+                        "bokuApiSecret": "Text",
+                        "bokuKeyId": "Text",
+                        "bokuMerchantId": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "BokuAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "CardAccountDetail",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "CardAccountDetail",
+                    "fields": {
+                        "altTokenFlag": "Maybe Text",
+                        "bin": "Text",
+                        "cryptogram": "Maybe Text",
+                        "cvv": "Maybe Text",
+                        "expiryMonth": "Text",
+                        "expiryYear": "Text",
+                        "lastFourDigits": "Maybe Text",
+                        "pan": "Text",
+                        "tokenReferenceId": "Maybe Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "CardAccountDetail",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "TataPaAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "TataPaAccountDetails",
+                    "fields": {
+                        "authorisation": "Text",
+                        "clientId": "Text",
+                        "clientPrivateKey": "Text",
+                        "instanceId": "Text",
+                        "merchantId": "Text",
+                        "pgInstanceId": "Text",
+                        "serverPublicKey": "Text",
+                        "xApiKey": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "TataPaAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "IataPayAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "IataPayAccountDetails",
+                    "fields": {
+                        "iatapayBusinessId": "Text",
+                        "iatapayClientId": "Text",
+                        "iatapayClientSecret": "Text",
+                        "iatapayWebhookSecret": "Maybe Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "IataPayAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "M2PAccountDetail",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "M2PAccountDetail",
+                    "fields": {
+                        "m2pMerchantId": "Text",
+                        "m2pPublicKey": "Text",
+                        "m2pSecretKey": "Text",
+                        "m2pTenant": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "M2PAccountDetail",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "NavitaireAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "NavitaireAccountDetails",
+                    "fields": {
+                        "agentCode": "Maybe Text",
+                        "authKey": "Maybe Text",
+                        "userKey": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "NavitaireAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "AcquirersAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "AxisDetails",
+                    "fields": {
+                        "0": "AxisUpiDetails"
+                    },
+                    "sumTypes": []
+                },
+                {
+                    "dataConNames": "HsbcDetails",
+                    "fields": {
+                        "0": "HsbcUpiDetails"
+                    },
+                    "sumTypes": []
+                },
+                {
+                    "dataConNames": "HdfcDetails",
+                    "fields": {
+                        "0": "HdfcUpiDetails"
+                    },
+                    "sumTypes": []
+                },
+                {
+                    "dataConNames": "IciciDetails",
+                    "fields": {
+                        "0": "IciciUpiDetails"
+                    },
+                    "sumTypes": []
+                },
+                {
+                    "dataConNames": "YesBizDetails",
+                    "fields": {
+                        "0": "YesBizUpiDetails"
+                    },
+                    "sumTypes": []
+                },
+                {
+                    "dataConNames": "AxisBizDetails",
+                    "fields": {
+                        "0": "AxisBizUpiDetails"
+                    },
+                    "sumTypes": []
+                },
+                {
+                    "dataConNames": "PaytmDetails",
+                    "fields": {
+                        "0": "PaytmV2Details"
+                    },
+                    "sumTypes": []
+                },
+                {
+                    "dataConNames": "GpayDetails",
+                    "fields": {
+                        "0": "DefaultUpiDetails"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "AcquirersAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "FreechargePgAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "FreechargePgAccountDetails",
+                    "fields": {
+                        "freechargePgMerchantId": "Text",
+                        "freechargePgMerchantKey": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "FreechargePgAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "LotusPayAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "LotusPayAccountDetails",
+                    "fields": {
+                        "creditorAgentCode": "Text",
+                        "creditorUtilityCode": "Text",
+                        "lotusPayApiKey": "Text",
+                        "lotusPayWebhookKey": "Text",
+                        "merchantNachProfile": "Maybe Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "LotusPayAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "LSPAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "LSPAccountDetails",
+                    "fields": {
+                        "secret": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "LSPAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "CapillaryAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "CapillaryAccountDetails",
+                    "fields": {
+                        "capillaryKey": "Text",
+                        "capillarySecret": "Text",
+                        "programId": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "CapillaryAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "CredAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "CredAccountDetails",
+                    "fields": {
+                        "businessPartnerId": "Maybe Text",
+                        "credClientId": "Text",
+                        "credClientSecret": "Text",
+                        "isWebEnabled": "Maybe Text",
+                        "sendExtraMetadata": "Maybe Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "CredAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "TapAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "TapAccountDetails",
+                    "fields": {
+                        "tapApplePayCertificate": "Maybe Text",
+                        "tapApplePayDisplayName": "Maybe Text",
+                        "tapApplePayInitiative": "Maybe Text",
+                        "tapApplePayMerchantIdentifier": "Maybe Text",
+                        "tapApplePayPrivateKey": "Maybe Text",
+                        "tapBearerAuth": "Text",
+                        "tapGooglePay3ds": "Maybe Bool",
+                        "tapGooglePayMerchantId": "Maybe Text",
+                        "tapGooglePayMerchantName": "Maybe Text",
+                        "tapMerchantId": "Text",
+                        "tapPublicKey": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "TapAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "IfgAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "IfgAccountDetails",
+                    "fields": {
+                        "authKey": "Text",
+                        "clientId": "Maybe Text",
+                        "currentAgentCode": "Maybe Text",
+                        "isPreAuthEnabled": "Maybe Text",
+                        "powerWallet": "Maybe Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "IfgAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "AirpayAccountDetail",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "AirpayAccountDetail",
+                    "fields": {
+                        "airpayClientId": "Text",
+                        "airpayClientSecret": "Text",
+                        "airpayMerchantId": "Text",
+                        "airpayPassword": "Text",
+                        "airpaySecret": "Text",
+                        "airpaySecretKey": "Text",
+                        "airpayUsername": "Text",
+                        "s2sEnabled": "Maybe Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "AirpayAccountDetail",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "EbsRiskAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "EbsRiskAccountDetails",
+                    "fields": {
+                        "ebsDomesticTemplateID": "Maybe Text",
+                        "ebsEndpoint": "Text",
+                        "ebsInternationalTemplateID": "Maybe Text",
+                        "ebsKey": "Text",
+                        "ebsMerchantID": "Text",
+                        "ebsSite": "Text",
+                        "ebsTemplateID": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "EbsRiskAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "TapPayAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "TapPayAccountDetails",
+                    "fields": {
+                        "merchantGroupId": "Maybe Text",
+                        "merchantId": "Maybe Text",
+                        "partnerKey": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "TapPayAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "CashToCodeAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "CashToCodeAccountDetails",
+                    "fields": {
+                        "cashToCodeMerchantIdClassic": "Maybe Text",
+                        "cashToCodeMerchantIdVoucher": "Maybe Text",
+                        "cashToCodePasswordClassic": "Maybe Text",
+                        "cashToCodePasswordVoucher": "Maybe Text",
+                        "cashToCodeUserNameClassic": "Maybe Text",
+                        "cashToCodeUserNameVoucher": "Maybe Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "CashToCodeAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "HSBCAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "HSBCAccountDetails",
+                    "fields": {
+                        "hsbcClientId": "Text",
+                        "hsbcClientSecret": "Text",
+                        "hsbcEnvironment": "Maybe HSBCEnvironment",
+                        "hsbcPublicKey": "Text",
+                        "hsbcPublicKeyVersion": "Text",
+                        "merchantId": "Maybe Text",
+                        "merchantPrivateKey": "Text",
+                        "merchantPrivateKeyVersion": "Text",
+                        "paymeMerchantId": "Maybe Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "HSBCAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "TrustPayAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "TrustPayAccountDetails",
+                    "fields": {
+                        "trustPayApiKey": "Text",
+                        "trustPayProjectId": "Text",
+                        "trustPaySecretKey": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "TrustPayAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "XenditAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "XenditAccountDetails",
+                    "fields": {
+                        "xenditPublicKey": "Text",
+                        "xenditSecretKey": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "XenditAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "ZestMoneyAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "ZestMoneyAccountDetails",
+                    "fields": {
+                        "clientId": "Text",
+                        "clientSecret": "Text",
+                        "failureUrl": "FailUrl",
+                        "gatewayId": "Int",
+                        "grantType": "Text",
+                        "merchantId": "Text",
+                        "scope": "Text",
+                        "successUrl": "SuccessUrl"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "ZestMoneyAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "OlaAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "OlaAccountDetails",
+                    "fields": {
+                        "olamoneyAccessToken": "Text",
+                        "olamoneyCouponCode": "Maybe Text",
+                        "olamoneyPassword": "Text",
+                        "olamoneySalt": "Text",
+                        "olamoneyUsername": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "OlaAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "NoonAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "NoonAccountDetails",
+                    "fields": {
+                        "isPreAuthEnabled": "Maybe Text",
+                        "noonAppKey": "Text",
+                        "noonAppName": "Text",
+                        "noonBusinessId": "Text",
+                        "noonChannel": "Text",
+                        "noonOrderCategory": "Text",
+                        "webhookSecret": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "NoonAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "BankAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "BankAccountDetails",
+                    "fields": {
+                        "ifscCode": "Maybe Text",
+                        "s7eBankAccountNumber": "AccountNumberDetails"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "BankAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "RazorpayAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "RazorpayAccountDetails",
+                    "fields": {
+                        "razorpayId": "Text",
+                        "razorpaySecret": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "RazorpayAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "JioPayAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "JioPayAccountDetails",
+                    "fields": {
+                        "jioPayClientId": "Text",
+                        "jioPayMerchantId": "Text",
+                        "jioPaySecretKey": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "JioPayAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "IatapayAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "IatapayAccountDetails",
+                    "fields": {
+                        "iatapayBusinessId": "Text",
+                        "iatapayClientId": "Text",
+                        "iatapayClientSecret": "Text",
+                        "webhookSecret": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "IatapayAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "NetceteraAuthAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "NetceteraAuthAccountDetails",
+                    "fields": {
+                        "acquirerMId": "Text",
+                        "acquirerMerchantName": "Text",
+                        "mcc": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "NetceteraAuthAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "PinelabsAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "PinelabsAccountDetails",
+                    "fields": {
+                        "bajajSchemeCode": "Text",
+                        "ppcMerchantAccessCode": "Text",
+                        "ppcMerchantID": "Text",
+                        "secureSecret": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "PinelabsAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "ECAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "ECAccountDetails",
+                    "fields": {
+                        "apiKey": "Text",
+                        "merchantId": "Text",
+                        "shouldUseTxnTypeForUpi": "Maybe Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "ECAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "InspireNetzAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "InspireNetzAccountDetails",
+                    "fields": {
+                        "authKey": "Text",
+                        "merchantNo": "Text",
+                        "password": "Text",
+                        "username": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "InspireNetzAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "LyraAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "LyraAccountDetails",
+                    "fields": {
+                        "lyraApiKey": "Text",
+                        "lyraShopId": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "LyraAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "DigioAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "DigioAccountDetails",
+                    "fields": {
+                        "digioClientId": "Text",
+                        "digioClientSecret": "Text",
+                        "digioCorporateAccountNumber": "Text",
+                        "digioCorporateConfigId": "Text",
+                        "digioManagementCategory": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "DigioAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "MyFatoorahAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "MyFatoorahAccountDetails",
+                    "fields": {
+                        "accessToken": "Text",
+                        "bypass3DS": "Maybe Bool",
+                        "registeredCountry": "Maybe RegisteredCountry",
+                        "webhookSecret": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "MyFatoorahAccountDetails",
+            "typeKind": "data"
+        }
+    ],
+    [
+        "SikaSimplAccountDetails",
+        {
+            "dataConstructors": [
+                {
+                    "dataConNames": "SikaSimplAccountDetails",
+                    "fields": {
+                        "sikaSimplMerchantClientId": "Text"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "SikaSimplAccountDetails",
+            "typeKind": "data"
+        }
+    ]
+]

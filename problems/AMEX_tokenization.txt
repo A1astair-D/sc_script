@@ -1,0 +1,23 @@
+[
+    {
+        "input_service_config": "AMEX_tokenization",
+        "dimensions_affected": {
+            "source_object": [
+                "MANDATE"
+            ],
+            "payment_gateway": [
+                "AMEX"
+            ]
+        }
+    }
+]
+
+Global graph built with 221124 nodes and 220183 edges.
+Running with service_configuration : AMEX_tokenization
+Checking with temp_str : AMEX_tokenization
+Current function is $main$Euler.API.Cards.App.Server$serveFlowServer
+Current function is $main$Euler.API.Cards.App.Server$getApp
+Current function is $main$Euler.API.Cards.App.Server$run
+Current function is $euler-api-txns-1.0.0-inplace-euler-api-txns-library$Euler.API.Txns.Server$server
+Var found is MANDATE
+SC_Results have been saved to problems/AMEX_tokenization.txt

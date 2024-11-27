@@ -1,0 +1,32 @@
+{
+    "summary": {
+        "count": 1,
+        "totalCount": 1
+    },
+    "rows": [
+            {
+                "id": 1446,
+                "version": 0,
+                "configName": "enable_razorpay_v2_order_create",
+                "currentValue": "{\n   \"merchants\": [\n      {\n         \"merchantId\": \"jiosaavn\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"azhar_test\",\n         \"rollout\": 0\n      },\n      {\n         \"merchantId\": \"mandate_juspay\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"com_shaadi\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"slice\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"smallcase\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"insurancedekho\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"Anjali_A_L\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"naviloans\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"navidigigold\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"paypal\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"global_sandbox\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"ausfinsurance\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"tfpl\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"merchant_success\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"testrichasbx\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"biryanibykilo\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"moneyview\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"ring\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"zest_money\",\n         \"rollout\": 100\n      },\n        {\n         \"merchantId\": \"tatagcstore\",\n         \"rollout\": 100\n      }\n   ],\n   \"enableAll\": false\n}",
+                "newValue": "",
+                "newValueStatus": "COMPLETED",
+                "newValueProposedBy": "juspay_sandbox_sehba",
+                "dateCreated": "2022-09-15T12:01:16Z",
+                "lastUpdated": "2024-09-24T15:17:57Z",
+                "description": "enabling mandate_juspay for v2OrderCreate",
+                "actualDict": {
+                    "newValueProposedBy": "juspay_sandbox_sehba",
+                    "lastUpdated": "2024-09-24T15:17:57Z",
+                    "value": "{\n   \"merchants\": [\n      {\n         \"merchantId\": \"jiosaavn\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"azhar_test\",\n         \"rollout\": 0\n      },\n      {\n         \"merchantId\": \"mandate_juspay\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"com_shaadi\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"slice\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"smallcase\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"insurancedekho\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"Anjali_A_L\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"naviloans\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"navidigigold\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"paypal\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"global_sandbox\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"ausfinsurance\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"tfpl\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"merchant_success\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"testrichasbx\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"biryanibykilo\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"moneyview\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"ring\",\n         \"rollout\": 100\n      },\n      {\n         \"merchantId\": \"zest_money\",\n         \"rollout\": 100\n      },\n        {\n         \"merchantId\": \"tatagcstore\",\n         \"rollout\": 100\n      }\n   ],\n   \"enableAll\": false\n}",
+                    "dateCreated": "2022-09-15T12:01:16Z",
+                    "name": "enable_razorpay_v2_order_create",
+                    "version": 0,
+                    "id": 1446,
+                    "newValueStatus": "COMPLETED",
+                    "description": "enabling mandate_juspay for v2OrderCreate"
+                },
+                "isCorrection": false
+            }
+    ]
+}

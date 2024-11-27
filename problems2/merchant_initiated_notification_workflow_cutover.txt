@@ -1,0 +1,26 @@
+[
+    {
+        "input_service_config": "merchant_initiated_notification_workflow_cutover",
+        "lit_found_in_code": "merchant_initiated_notification_workflow_cutover",
+        "dimensions_affected": {
+            "payment_gateway": [
+                "HDFC_UPI",
+                "HYPERPG"
+            ]
+        }
+    }
+]
+
+Global graph built with 221124 nodes and 220183 edges.
+Running with service_configuration : merchant_initiated_notification_workflow_cutover
+Current function is $euler-x-1.0.0-inplace$Engineering.WorkFlow.Mandate.Constants$merchantInitiatedNotificationWorkflow
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Notifications$callNotificationRequestWithPGAndHandleResponse
+Var found is HDFC_UPI
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Notifications$sendMandateNotification
+Var found is HYPERPG
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Notifications$sendNotification
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Mandate$executeMandateCommand
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.Mandate$executeMandateCommandJwe
+Adding related dimensions
+Removing key if exceeds threshold
+SC_Results have been saved to results_directory/problem_output.json

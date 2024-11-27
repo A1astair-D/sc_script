@@ -1,0 +1,33 @@
+[
+    {
+        "input_service_config": "payu_order_amount_as_subvention_amount_cutover",
+        "lit_found_in_code": "payu_order_amount_as_subvention_amount_cutover",
+        "dimensions_affected": {
+            "payment_gateway": [
+                "BAJAJFINSERV",
+                "PAYU",
+                "TWID"
+            ],
+            "payment_instrument_group": [
+                "UPI"
+            ]
+        }
+    }
+]
+
+Running with service_configuration : payu_order_amount_as_subvention_amount_cutover
+Current function is $euler-x-1.0.0-inplace$Config.Constants$shouldPassOrderAmountAsSubventionAmountPayu
+Current function is $euler-x-1.0.0-inplace$Gateway.Payu.Transforms$validateNoCostEmiAmount
+Current function is $euler-x-1.0.0-inplace$Gateway.Payu.Transforms$makePayuTriggerOTPRequest
+Current function is $euler-x-1.0.0-inplace$Gateway.Payu.Transforms$makePayuTransactionRequest
+lit found is BAJAJFINSERV
+lit found is TWID
+lit found is PAYU
+Current function is $euler-x-1.0.0-inplace$Gateway.Payu.Flow$preTxnValidator
+Current function is $euler-x-1.0.0-inplace$Gateway.Payu.Flow$initiateTxn
+Current function is $euler-x-1.0.0-inplace$Gateway.Payu.Flow$checkTpvPreAuthTokenisedAndMakeTransactionRequest
+Var found is UPI
+Current function is $euler-x-1.0.0-inplace$Gateway.Payu.Flow$validateThreeDsParamAndMakePayment
+Adding related dimensions
+Removing key if exceeds threshold
+SC_Results have been saved to results_directory/problem_output.json

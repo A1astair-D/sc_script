@@ -1,0 +1,63 @@
+[
+    {
+        "input_service_config": "MASTERCARD_ALT_ID_SUPPORTED_CARD_GATEWAYS_ROLLOUT",
+        "lit_found_in_code": "_ALT_ID_SUPPORTED_CARD_GATEWAYS_ROLLOUT",
+        "dimensions_affected": {
+            "payment_instrument_group": [
+                "AADHAAR",
+                "CARD",
+                "CONSUMER_FINANCE",
+                "REWARD",
+                "RTP",
+                "UPI",
+                "WALLET"
+            ],
+            "txn_object_type": [
+                "ORDER_PAYMENT"
+            ],
+            "auth_type": [
+                "FIDO",
+                "OTP",
+                "THREE_DS"
+            ],
+            "source_object": [
+                "DIRECT_WALLET_LINK_AND_DEBIT",
+                "MANDATE",
+                "UPI_COLLECT",
+                "UPI_INAPP"
+            ],
+            "payment_gateway": [
+                "AIRTELMONEY",
+                "AMAZONPAY",
+                "ATOM",
+                "BAJAJFINSERV",
+                "BHARATX",
+                "BILLDESK",
+                "CASH",
+                "CCAVENUE_V2",
+                "DUMMY",
+                "EASEBUZZ",
+                "GOCASHFREE",
+                "HDFC",
+                "IPG",
+                "LAZYPAY",
+                "LOANTAP",
+                "MERCHANT_CONTAINER",
+                "MIGS",
+                "MOBIKWIK",
+                "OLAPOSTPAID",
+                "PAYFORT",
+                "PAYTM",
+                "PAYTM_V2",
+                "PAYU",
+                "PHONEPE",
+                "PINELABS",
+                "RAZORPAY",
+                "SBI",
+                "SHOPSE",
+                "SIMPL",
+                "TPSL"
+            ]
+        }
+    }
+]

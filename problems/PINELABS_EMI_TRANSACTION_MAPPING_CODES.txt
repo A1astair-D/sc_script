@@ -1,0 +1,45 @@
+[
+    {
+        "input_service_config": "PINELABS_EMI_TRANSACTION_MAPPING_CODES",
+        "dimensions_affected": {
+            "payment_gateway": [
+                "PAYU",
+                "PINELABS"
+            ]
+        }
+    }
+]
+
+````
+Running with service_configuration : PINELABS_EMI_TRANSACTION_MAPPING_CODES
+Checking with temp_str : PINELABS_EMI_TRANSACTION_MAPPING_CODES
+Current function is $euler-x-1.0.0-inplace$Config.Constants$pineLabsBankCodeMapping
+Current function is $euler-x-1.0.0-inplace$Gateway.PineLabs.Flow$getEmiMapping
+Current function is $euler-x-1.0.0-inplace$Gateway.PineLabs.Flow$getEmiPlans
+Current function is $euler-x-1.0.0-inplace$Gateway.PineLabs.Flow$preTxnValidator
+Var found is PINELABS
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.EmiPlans$getEmiPlansResp
+lit found is PAYU
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.EmiPlans$getEMIPlansResponse
+Current function is $oltp-0.1.0.0-inplace$Product.OLTP.EmiPlans$getEMIPlans
+Function $euler-x-1.0.0-inplace$Config.Constants$pineLabsBankCodeMapping gives lit ['PINELABS', 'PAYU']
+SC_Results have been saved to results_directory/problem_output.json
+````
+
+getEmiPlansResp :: forall st e. (Nau.HasCallStack, Newtype st (DefaultState e)) => EmiPlansReq -> MerchantAccount -> [MerchantGatewayAccount] -> BackendFlow st Configs ([EmiPlansData])
+getEmiPlansResp req merchantAccount gatewayAccounts = do
+  maybeAmount <- getAmountfromReq req merchantAccount
+  case maybeAmount of
+    Nothing -> pure []
+    Just amount -> do
+      let executorFn gateway = callEmiPlans gateway amount
+          actionList = foldl (\acc gw -> cons (executorFn gw) acc) [] gatewayAccounts
+      emiPlansResp <- catEithers <$> parSequence actionList
+      pure $ concat emiPlansResp
+  where
+    callEmiPlans mga@(account@MerchantGatewayAccount {}) amount =  case mga ^. _gateway of
+                                                                            "PAYU" -> getEmiPlans mga amount req
+                                                                            "PINELABS" -> PineLabs.getEmiPlans req mga (readFloat amount)
+                                                                            _ ->  pure []
+    catEithers :: [(Either Error ([EmiPlansData]))] -> [([EmiPlansData])]
+    catEithers eithers = foldl (\acc val -> either (const $ acc) (flip cons acc) val) [] eithers

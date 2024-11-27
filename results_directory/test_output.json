@@ -1,0 +1,138 @@
+[
+    {
+        "input_service_config": "merchants_enabled_for_integrity_framework_PINELABS",
+        "lit_found_in_code": "merchants_enabled_for_integrity_framework",
+        "dimensions_affected": {
+            "payment_gateway": [
+                "PINELABS"
+            ]
+        }
+    },
+    {
+        "input_service_config": "mandate_retry_disabled_for_UPI_PAYTM_V2",
+        "lit_found_in_code": "mandate_retry_disabled_for_",
+        "dimensions_affected": {
+            "payment_gateway": [
+                "PAYTM",
+                "PAYTM_V2"
+            ],
+            "payment_instrument_group": [
+                "UPI"
+            ]
+        }
+    },
+    {
+        "input_service_config": "ALT_ID_MERCHANT_ENABLED_MASTERCARD",
+        "lit_found_in_code": "ALT_ID_MERCHANT_ENABLED_",
+        "dimensions_affected": {
+            "payment_instrument_group": [
+                "CARD",
+                "CREDIT CARD",
+                "DEBIT CARD"
+            ]
+        }
+    },
+    {
+        "input_service_config": "payu_order_amount_as_subvention_amount_cutover",
+        "lit_found_in_code": "payu_order_amount_as_subvention_amount_cutover",
+        "dimensions_affected": {}
+    },
+    {
+        "input_service_config": "payment_locking_merchant_cutover",
+        "lit_found_in_code": "payment_locking_merchant_cutover",
+        "dimensions_affected": {}
+    },
+    {
+        "input_service_config": "juspay_billdesk_public_key_v2_merchant_cutover",
+        "lit_found_in_code": "juspay_billdesk_public_key_v2_merchant_cutover",
+        "dimensions_affected": {}
+    },
+    {
+        "input_service_config": "sr_v3_producer_isolation",
+        "lit_found_in_code": "sr_v3_producer_isolation",
+        "dimensions_affected": {}
+    },
+    {
+        "input_service_config": "ENABLE_GATEWAY_SELECTION_BASED_ON_OPTIMIZED_SR_INPUT_NB",
+        "lit_found_in_code": "ENABLE_GATEWAY_SELECTION_BASED_ON_OPTIMIZED_SR_INPUT",
+        "dimensions_affected": {
+            "payment_instrument_group": [
+                "NET BANKING"
+            ]
+        }
+    },
+    {
+        "input_service_config": "hyper_switch_enabled_payment_methods",
+        "lit_found_in_code": "hyper_switch_enabled_payment_methods",
+        "dimensions_affected": {}
+    },
+    {
+        "input_service_config": "outage_explicit_mail_ids",
+        "lit_found_in_code": "outage_explicit_mail_ids",
+        "dimensions_affected": {}
+    },
+    {
+        "input_service_config": "IS_GBESV2_ENABLED",
+        "lit_found_in_code": "IS_GBESV2_ENABLED",
+        "dimensions_affected": {}
+    },
+    {
+        "input_service_config": "payu_order_amount_as_subvention_amount_cutover",
+        "lit_found_in_code": "payu_order_amount_as_subvention_amount_cutover",
+        "dimensions_affected": {}
+    },
+    {
+        "input_service_config": "enabled_upi_outages",
+        "lit_found_in_code": "enabled_upi_outages",
+        "dimensions_affected": {}
+    },
+    {
+        "input_service_config": "schedule_level_mandate_execution_enabled_merchants",
+        "lit_found_in_code": "schedule_level_mandate_execution_enabled_merchants",
+        "dimensions_affected": {}
+    },
+    {
+        "input_service_config": "gateway_score_latency_check_in_mins",
+        "lit_found_in_code": "gateway_score_latency_check_in_mins",
+        "dimensions_affected": {}
+    },
+    {
+        "input_service_config": "enable_gateway_headers",
+        "lit_found_in_code": "enable_gateway_headers",
+        "dimensions_affected": {}
+    },
+    {
+        "input_service_config": "phone_number_validation",
+        "lit_found_in_code": "phone_number",
+        "dimensions_affected": {}
+    },
+    {
+        "input_service_config": "meesho_gw_score_latency_threshold",
+        "lit_found_in_code": "_gw_score_latency_threshold",
+        "dimensions_affected": {}
+    },
+    {
+        "input_service_config": "merchant_initiated_notification_workflow_cutover",
+        "lit_found_in_code": "merchant_initiated_notification_workflow_cutover",
+        "dimensions_affected": {}
+    },
+    {
+        "input_service_config": "GOCASHFREE_EMI_CODES",
+        "lit_found_in_code": "GOCASHFREE_EMI_CODES",
+        "dimensions_affected": {}
+    },
+    {
+        "input_service_config": "razorpay_v2_enabled_merchants",
+        "lit_found_in_code": "razorpay_v2_enabled_merchants",
+        "dimensions_affected": {}
+    },
+    {
+        "input_service_config": "max_amount_allowed_for_emandate_SBI",
+        "lit_found_in_code": "max_amount_allowed_for_emandate_",
+        "dimensions_affected": {
+            "payment_gateway": [
+                "SBI"
+            ]
+        }
+    }
+]
